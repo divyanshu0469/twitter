@@ -6,8 +6,8 @@ async function sendVarifyMail(email_to){
         port:465,
         secure:false,
         auth:{
-            user:"divyanshuthegreat101@gmail.com",
-            pass:"uetyazqipdctxqpj"
+            user:"", // email of sender
+            pass:"" // password of sender
         }
     });
     try{
