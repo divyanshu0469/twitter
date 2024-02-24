@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Update package lists
+sudo apt update
+
+# Install Apache web server
+sudo apt install apache2 -y
+
+# Enable Apache modules
+sudo a2enmod rewrite
+sudo a2enmod ssl
+
+# Restart Apache service
+sudo systemctl restart apache2
+
+# Create a sample HTML application
+echo "<html>
+<head>
+    <title>Sample Web Application</title>
+</head>
+<body>
+    <h1>Welcome to My Sample Web Application!</h1>
+    <p>This is a simple HTML application deployed using a shell script.</p>
+</body>
+</html>" | sudo tee /var/www/html/index.html
+
+# Set permissions
+sudo chown -R www-data:www-data /var/www/html/
+sudo chmod -R 755 /var/www/html/
+
+# Display Apache status
+sudo systemctl status apache2

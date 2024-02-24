@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Twitter</title>
+</head>
+<!--grey dark => rgb(22, 24, 28); -->
+<!-- grey => rgb(113, 118, 123); -->
+<!-- blue => rgb(29, 155, 240); -->
+<body style="background-color: black; color: white;">
+    <div style="width: 1000px; margin: 0 auto; font-family: Georgia, 'Times New Roman', Times, serif; ">
+        <form action="/reg_submit" method="post">
+            <table align="center" style="margin-top: 50px;border: 1px solid rgb(113, 118, 123); background-color: rgb(22, 24, 28); padding: 40px; border-radius: 10px;">
+                <tr>
+                    <td colspan="2" align="center">
+                        <div style="border-radius: 10px;width:280px; margin-bottom: 50px; text-align: center;padding: 10px; background-color: rgb(29, 155, 240); color:white; font-size:30px; clear:both;font-family: 'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif; padding-left:10px">
+                            Sign up
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">First Name</td>
+                    <td ><input required type="text" name="fname"  style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Middle Name</td>
+                    <td><input type="text" name="mname" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Last Name</td>
+                    <td><input required type="text" name="lname" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Enter Email or Mobile Number</td>
+                    <td><input required type="text" name="email" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Enter Username</td>
+                    <td><input required type="text" name="username" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Enter Password</td>
+                    <td><input required type="password" name="password" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Confirm Password</td>
+                    <td><input required type="password" name="cpass" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Date Of Birth</td>
+                    <td><input required type="date" name="dob" style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 10px; font-size: medium; padding: 12px; width: 300px;">Gender</td>
+                    <td>
+                        <label for="male" style="font-size: medium; padding: 12px;"><input type="radio" name="gender" value="0" >Male</label>
+                        <label for="female" style="font-size: medium; padding: 12px;"><input type="radio" name="gender" value="1">Female</label>
+                        <label for="dnd" style="font-size: medium; padding: 12px;"><input type="radio" name="gender" value="2">DND</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Register"  style="margin-top: 20px;background-color: rgb(29, 155, 240); color: white; cursor: pointer; font-weight: bolder; border-radius: 10px; font-size: large; padding: 12px; width: 300px;"/></td>
+                    
+                </tr>
+            </table>
+            <h3 style=" text-align:center; color: white;"><%=msg%></h3>
+
+        </form>
+        <div style="color: rgb(113, 118, 123);">
+            <p>Already have an account ? <a href="/" style="text-decoration: underline; color: rgb(113, 118, 123);">Login Up</a></p>
+        </div>
+    </div>
+</body>
+</html>

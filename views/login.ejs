@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Twitter</title>
+</head>
+<!--grey dark => rgb(22, 24, 28); -->
+<!-- grey => rgb(113, 118, 123); -->
+<!-- blue => rgb(29, 155, 240); -->
+<body style="background-color: black; color: white;">
+    <div style="width: 1000px; margin: 0 auto; font-family: Georgia, 'Times New Roman', Times, serif; ">
+        <form action="/login_submit" method="post">
+            <table align="center" style="margin-top: 50px;border: 1px solid rgb(113, 118, 123); background-color: rgb(22, 24, 28); padding: 40px; border-radius: 10px;">
+                <tr>
+                    <td>
+                        <div style="border-radius: 10px;width:280px; margin-bottom: 200px; text-align: center;padding: 10px; background-color: rgb(29, 155, 240); color:white; font-size:30px; clear:both;font-family: 'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif; padding-left:10px">
+                            Sign in to Twitter
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" required placeholder="Email or Mobile Number" name="email" style="border-radius: 10px; font-size: large; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td><input type="password" required placeholder="Enter Password" name="pass" style="border-radius: 10px; font-size: large; padding: 12px; width: 300px;"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login" style="margin-top: 20px;background-color: rgb(29, 155, 240); color: white; cursor: pointer; font-weight: bolder; border-radius: 10px; font-size: large; padding: 12px; width: 300px;"/></td>
+                </tr>
+            </table>
+            <h3 style=" text-align:center; color: white;"><%=msg%></h3>
+
+        </form>
+        <div style="color: rgb(113, 118, 123);">
+            <p>Don't have an account ?
+            <a href="/signup" style="text-decoration: underline; color: rgb(113, 118, 123);">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>
